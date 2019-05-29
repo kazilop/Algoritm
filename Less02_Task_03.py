@@ -12,6 +12,7 @@ while i != 0:
 
     i = numb % 10
     numb = (numb - numb % 10) / 10
+
     if i != 0 and numb >= 0:
         new = new * k + i
 

@@ -29,12 +29,12 @@ while True:
         print("Не правильный ввод...")
         znak = input("Что делаем: ")
 
-    if znak == "0":
+    if znak == "+" or znak == "-" or znak == "/" or znak == "*":
+        result = operation(a, b, znak)
+
+    elif znak == "0":
         print("Пока пока...")
         break
-
-    elif znak == "+" or znak == "-" or znak == "/" or znak == "*":
-        result = operation(a, b, znak)
 
     print(f"Результат = {result}")
 
